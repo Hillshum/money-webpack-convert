@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form id="currency-form">
+      <input type="text" class="symbol-input" placeholder="Currency Code">
+      <input type="submit" value="Get rate">
+    </form>
+    <div class="current-price"></div>
+    <script src='/javascripts/currency.js'></script>
+
+  </body>
+</html>
